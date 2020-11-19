@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <aside id="sticky-social">
+    <ul>
+      <li><a href="https://www.facebook.com/capelpisco"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://twitter.com/piscocapel"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/capelpisco/"><i class="fab fa-instagram"></i></a></i></li>
+      <li><a href="https://www.youtube.com/user/CapelPuroChile"><i class="fab fa-youtube"></i></a></li>
+      <li id="contact-btn"><a href="#"><i class="far fa-envelope"></i></a></li>
+    </ul>
+    <div class="form-contacto d-none">
+
+        <form id="contact" action="" method="post">
+          <h3>Contáctanos</h3>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="e-mail" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Mensaje" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+          </fieldset>
+        </form>
+    </div>
+  </aside>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+  $("#contact-btn").click(function(){
+    $(".form-contacto").toggleClass("d-none");
+  });
+  </script>
+
+</body>
+</html>
+
+
